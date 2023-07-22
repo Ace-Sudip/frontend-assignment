@@ -16,15 +16,14 @@ const roboto = Roboto({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: 'Welcome to Online Store',
-  description: 'Shop your favorite accessories',
-}
+
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en">
-      <body className={roboto.className}>
+    <title>Welcome to Online Store</title>
+    <body className={roboto.className}>
         <ReactQueryProvider>
         <Provider store={store}>
           <Header/>
