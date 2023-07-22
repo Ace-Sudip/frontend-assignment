@@ -18,7 +18,7 @@ function SingledataPage() {
   if (isError)
     return (
       <div>
-        <Error />
+        sth went wrong
       </div>
     );
 
