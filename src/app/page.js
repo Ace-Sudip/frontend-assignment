@@ -5,8 +5,12 @@ import Error from "next/error";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addToCart } from "@/features/cart/cartSlice";
 
 export default function Home() {
+  const dispatch = useDispatch();
+
   const {
     data: allProducts,
     isLoading,
@@ -27,6 +31,10 @@ export default function Home() {
     );
   if (isError) return <Error />;
 
+  function handleAddToCart(product) {
+    dispatch(addToCart(product));
+  }
+
   const filteredProducts = allProducts.filter((product) =>
     product.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
@@ -40,20 +48,34 @@ export default function Home() {
         />
         {filteredProducts.map((product) => (
           <div className="col-md-4 mb-2 mt-2" key={product.id}>
-            <div className="card">
-              <Link href={`/${product.id}`}>
+            <div id="hovercart">
+              <div className="card">
                 <div className="d-flex justify-content-center">
                   <Image
                     className="mx-auto resimg img-fluid mt-2"
-                    height={350}
-                    width={350}
+                    height="250"
+                    width="250"
                     src={product.image}
                     alt={product.title}
+                    priority
                   />
                 </div>
                 <p className="h4 card-title mt-3 ml-2">{product.title}</p>
-              </Link>
-              <p className="h5 mt-2 ml-2">Price: {product.price}</p>
+                <div>
+                  <Link href={`/${product.id}`}>
+                    <button className=" btn btn-success float-left  ">
+                      Detail
+                    </button>
+                  </Link>
+                  <button
+                    onClick={() => handleAddToCart(product)}
+                    id="shopcart"
+                    className=" btn btn-info float-right mb-2 "
+                  >
+                    Cart
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         ))}

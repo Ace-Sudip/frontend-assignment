@@ -11,3 +11,18 @@
 a{
   text-decoration: none  !important;
 }
+
+#shopcart{
+  opacity: 0% ;
+  
+}
+
+
+#hovercart:hover #shopcart{
+  opacity: 100%;
+  
+}
+#shopcart:hover{
+  display: inline-block;
+  opacity: 100%;
+}
