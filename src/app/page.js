@@ -29,7 +29,7 @@ export default function Home() {
         <span className="sr-only">Loading...</span>
       </div>
     );
-  if (isError) return <Error />;
+  if (isError) return <div>Error...</div>;
 
   function handleAddToCart(product) {
     dispatch(addToCart(product));
