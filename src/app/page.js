@@ -71,8 +71,7 @@ export default function Home() {
                     onClick={() => handleAddToCart(product)}
                     id="shopcart"
                     className=" btn btn-info float-right mb-2 "
-                  >
-                    Cart
+                  >Add to Cart
                   </button>
                 </div>
               </div>
