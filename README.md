@@ -1,35 +1,32 @@
-E-commerce Development Task: Online Store Created by Sudip-Tasi <br/>
+<h1>E-commerce Development Task: Online Store</h1><br/>
 
-Live Demo: https://frontend-by-sudip-tasi.vercel.app/
+#Live Demo: https://frontend-by-sudip-tasi.vercel.app/
 
+<h2>Features of the app</h2>
+- Error and Loading state management by react-query<br/>
+- Add to Cart functionality with the help of redux<br/>
+- Crud functionality on items added to cart<br/>
+- Awesome User Interface and responsive design<br/>
+- Search functionality <br/>
 
-Features 
-
-
--Error and Loading state management by react-query
--Add to Cart functionality with the help of redux
--Awesome User Interface and design
--Search functionality 
-
-Tools Used:
--Next.js 
--Tanstack/React query
--Redux-toolkit
--Bootstrap
+<h4>Tools/Technologies Used:</h3><hr/>
+- Next.js <br/>
+- Tanstack/React query<br/>
+- Redux-toolkit<br/>
+- Bootstrap<br/>
+- More..
 
 ## Getting Started
+Steps:<br/>
+1. Clone the repository using<br/>
+ git clone https://github.com/your-githubaccount/frontend-assignment.git<br/>
+2. Open any code editor and run the command in the terminal<br/>
+   npm install<br/>
+3. Run the command<br/>
+npm run dev<br/>
+or<br/>
+yarn dev<br/>
 
-First, run the development server:
-
-npm run dev
-# or
-yarn dev
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the final result.
 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
