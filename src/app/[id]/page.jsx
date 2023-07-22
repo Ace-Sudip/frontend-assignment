@@ -25,7 +25,7 @@ function SingledataPage() {
   console.log(data);
   return (
     <div className="container-fluid">
-      <div className="row mt-5 text-center">
+      <div className="row mt-5 ">
         <div className="col-md-12 ">
           <div className="card shadow p-3 mb-5 bg-white rounded">
             <p className="h3">{data.title}</p>
@@ -43,7 +43,6 @@ function SingledataPage() {
 
             <p className="h5 font-weight-bold">Rating: {data.rating.rate}</p>
             <p className="h5 font-weight-bold">Price: Rs. {data.price}</p>
-            <button className=" btn m-2 btn-info disabled">Shop Now</button>
 
             <hr />
           </div>

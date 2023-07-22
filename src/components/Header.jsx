@@ -6,7 +6,10 @@ function Header() {
   return (
     <nav className="navbar navbar-expand navbar-light bg-info w-100 mb-5">
       <Link href="/" className="navbar-brand">
-        <p className="h5">Online Store</p>
+      <p className="h4  text-danger  text-bolder ">
+      <span className="logo-letter">O</span>nline{' '}
+      <span className="logo-letter">S</span>tore
+    </p>
       </Link>
       <button
         className="navbar-toggler"
