@@ -1,7 +1,7 @@
 "use client";
 import SearchBox from "@/components/SearchBox";
 import { useQuery } from "@tanstack/react-query";
-import Error from "next/error";
+
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
