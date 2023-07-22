@@ -1,6 +1,21 @@
+E-commerce Development Task: Online Store Created by Sudip-Tasi <br/>
+
+Live Demo: https://frontend-by-sudip-tasi.vercel.app/
 
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Features 
+
+
+-Error and Loading state management by react-query
+-Add to Cart functionality with the help of redux
+-Awesome User Interface and design
+-Search functionality 
+
+Tools Used:
+-Next.js 
+-Tanstack/React query
+-Redux-toolkit
+-Bootstrap
 
 ## Getting Started
 
